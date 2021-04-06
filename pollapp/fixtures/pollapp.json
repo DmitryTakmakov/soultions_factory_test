@@ -1,0 +1,62 @@
+[
+  {
+    "model": "pollapp.poll",
+    "pk": "43ed8ebf-9a32-4564-9cd8-cafe7fcc202f",
+    "fields": {
+      "name": "test poll",
+      "start_date": "2021-04-04T12:57:57.064Z",
+      "finish_date": "2021-04-06T13:00:00.796Z",
+      "description": "blablabla",
+      "is_active": true
+    }
+  },
+  {
+    "model": "pollapp.poll",
+    "pk": "926c8c32-0bf8-4993-bb37-7a6e0d72ac22",
+    "fields": {
+      "name": "another test poll",
+      "start_date": "2021-04-07T02:58:40.847Z",
+      "finish_date": "2021-04-08T02:58:47.533Z",
+      "description": "yaddayadda",
+      "is_active": false
+    }
+  },
+  {
+    "model": "pollapp.pollquestion",
+    "pk": "3fd006db-0858-401b-a9c2-c047b83a3717",
+    "fields": {
+      "poll": "43ed8ebf-9a32-4564-9cd8-cafe7fcc202f",
+      "question_text": "Do you like developing new stuff?",
+      "question_type": "MULT"
+    }
+  },
+  {
+    "model": "pollapp.pollquestion",
+    "pk": "45ae36e1-da6d-4b93-9eb5-29f085a2120a",
+    "fields": {
+      "poll": "43ed8ebf-9a32-4564-9cd8-cafe7fcc202f",
+      "question_text": "Do you like testing new stuff?",
+      "question_type": "TXT"
+    }
+  },
+  {
+    "model": "pollapp.pollsusers",
+    "pk": "34a44d92-36a3-4907-833d-620b2ca977ac",
+    "fields": {
+      "user": "aa3eaf85-3b28-43ea-954e-470f2b4b8fb1",
+      "poll": "43ed8ebf-9a32-4564-9cd8-cafe7fcc202f",
+      "poll_question": "3fd006db-0858-401b-a9c2-c047b83a3717",
+      "user_answer": "A)"
+    }
+  },
+  {
+    "model": "pollapp.pollsusers",
+    "pk": "a81b9268-ba97-46e4-9ce8-a9589f3850a1",
+    "fields": {
+      "user": "aa3eaf85-3b28-43ea-954e-470f2b4b8fb1",
+      "poll": "43ed8ebf-9a32-4564-9cd8-cafe7fcc202f",
+      "poll_question": "45ae36e1-da6d-4b93-9eb5-29f085a2120a",
+      "user_answer": "yes, I do!"
+    }
+  }
+]

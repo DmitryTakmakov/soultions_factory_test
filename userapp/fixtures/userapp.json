@@ -1,0 +1,38 @@
+[
+  {
+    "model": "userapp.polluser",
+    "pk": "7adab3ea-aaa3-4af6-868d-ef568595faf9",
+    "fields": {
+      "password": "basepassword",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "testuser",
+      "first_name": "Test",
+      "last_name": "User",
+      "email": "test@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-04-05T02:56:32.093Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "userapp.polluser",
+    "pk": "aa3eaf85-3b28-43ea-954e-470f2b4b8fb1",
+    "fields": {
+      "password": "pbkdf2_sha256$150000$ABCSiX6TLM8l$6mpxrFWMCzlYYwRwi8vcV+cibpehioWBXpg25iWwOPM=",
+      "last_login": "2021-04-05T12:55:53.866Z",
+      "is_superuser": true,
+      "username": "super_admin",
+      "first_name": "Super",
+      "last_name": "User",
+      "email": "super@example.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-04-04T21:55:06.488Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]
