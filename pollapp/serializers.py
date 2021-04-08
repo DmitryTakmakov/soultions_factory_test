@@ -1,6 +1,7 @@
 """
 Serializers for the polls application.
 """
+from rest_framework import serializers
 from rest_framework.exceptions import ValidationError
 from rest_framework.serializers import ModelSerializer
 
@@ -34,6 +35,8 @@ class PollQuestionModelSerializer(ModelSerializer):
     """
     ModelSerializer subclass for serialization of PollQuestion model.
     """
+    poll = serializers.StringRelatedField()
+
     class Meta:
         model = PollQuestion
         fields = ['poll', 'question_text', 'question_type']
@@ -43,6 +46,10 @@ class PollsUsersModelSerializer(ModelSerializer):
     """
     ModelSerializer subclass for serialization of PollsUsers model.
     """
+    user = serializers.StringRelatedField()
+    poll = serializers.StringRelatedField()
+    poll_question = serializers.StringRelatedField()
+
     class Meta:
         model = PollsUsers
         fields = ['user', 'poll', 'poll_question', 'user_answer']
